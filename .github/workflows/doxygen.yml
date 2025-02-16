@@ -18,19 +18,17 @@ jobs:
         
       - name: Build English documentation
         run: |
-          mkdir -p docs/en
           doxygen Doxyfile_en
 
       - name: Build Russian documentation
         run: |
-          mkdir -p docs/ru
           doxygen Doxyfile_ru
 
       - name: Deploy English documentation to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/en
+          publish_dir: en
           destination_dir: en
           enable_jekyll: false
 
@@ -38,6 +36,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/ru
+          publish_dir: ru
           destination_dir: ru
           enable_jekyll: false
