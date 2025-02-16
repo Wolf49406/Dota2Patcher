@@ -1,0 +1,40 @@
+name: Deploy Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Doxygen
+        run: sudo apt-get install doxygen -y
+
+      - name: Create output directories
+        run: |
+          mkdir -p Docs/ru
+          mkdir -p Docs/en
+          
+      - name: Build documentation (ru)
+        run: doxygen Doxyfile_ru
+
+      - name: Build documentation (en)
+        run: doxygen Doxyfile_en
+
+      - name: Deploy to GitHub Pages (ru)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./Docs/ru
+
+      - name: Deploy to GitHub Pages (en)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./Docs/en
