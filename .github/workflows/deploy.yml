@@ -13,11 +13,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Build documentation
-        run: |
-          mkdir -p docs/ru docs/en
-          doxygen doxygen_ru.yml
-          doxygen doxygen_en.yml
+      - name: Set up Doxygen
+        run: sudo apt-get install doxygen -y
+
+      - name: Build documentation (ru)
+        run: doxygen Doxyfile_ru
+
+      - name: Build documentation (en)
+        run: doxygen Doxyfile_en
 
       - name: Deploy to GitHub Pages (ru)
         uses: peaceiris/actions-gh-pages@v3
