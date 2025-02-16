@@ -1,0 +1,22 @@
+var NAVTREEINDEX0 =
+{
+"Dota2Patcher_8h_source.html":[2,0,0],
+"annotated.html":[1,0],
+"classPatches.html":[1,0,0],
+"classes.html":[1,1],
+"files.html":[2,0],
+"index.html":[],
+"md_README.html":[0],
+"md_README.html#autotoc_md1":[0,0],
+"md_README.html#autotoc_md2":[0,1],
+"md_README.html#autotoc_md3":[0,1,0],
+"md_README.html#autotoc_md4":[0,1,1],
+"md_README.html#autotoc_md5":[0,1,2],
+"md_README.html#autotoc_md6":[0,1,3],
+"md_README.html#autotoc_md7":[0,1,4],
+"md_README.html#autotoc_md8":[0,1,5],
+"pages.html":[],
+"pch_8h_source.html":[2,0,1],
+"structPatches_1_1PatchInfo.html":[1,0,0,0],
+"structPatches_1_1Patterns.html":[1,0,0,1]
+};
