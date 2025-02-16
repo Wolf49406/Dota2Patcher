@@ -16,6 +16,11 @@ jobs:
       - name: Set up Doxygen
         run: sudo apt-get install doxygen -y
 
+      - name: Create output directories
+        run: |
+          mkdir -p Docs/ru
+          mkdir -p Docs/en
+          
       - name: Build documentation (ru)
         run: doxygen Doxyfile_ru
 
