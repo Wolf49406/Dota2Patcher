@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        
+
       - name: Install Doxygen
         run: sudo apt-get install doxygen -y
         
@@ -26,16 +26,9 @@ jobs:
           mkdir -p docs/ru
           doxygen Doxyfile_ru
 
-      - name: Deploy English documentation to GitHub Pages
+      - name: Deploy documentation to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/en
-          nojekyll: true
-
-      - name: Deploy Russian documentation to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/ru
+          publish_dir: docs
           disable_nojekyll: true
