@@ -16,12 +16,15 @@ jobs:
       - name: Install Doxygen
         run: sudo apt-get install doxygen -y
 
+      - name: Disable Jekyll
+        run: touch Docs/en/.nojekyll
+        
       - name: Create output directory
         run: mkdir -p Docs/en
         
       - name: Generate English Doxygen documentation
         run: doxygen Doxyfile_en
-
+  
       - name: Deploy English Docs to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
