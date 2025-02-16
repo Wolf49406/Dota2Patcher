@@ -1,0 +1,31 @@
+name: Generate English Doxygen Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Doxygen
+        run: sudo apt-get install doxygen -y
+
+      - name: Create output directory
+        run: mkdir -p Docs/en
+        
+      - name: Generate English Doxygen documentation
+        run: doxygen Docs/Doxyfile_en
+
+      - name: Deploy English Docs to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./Docs/en
+          destination_dir: en
+          enable_jekyll: false
