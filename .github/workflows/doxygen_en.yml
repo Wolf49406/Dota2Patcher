@@ -20,7 +20,7 @@ jobs:
         run: mkdir -p Docs/en
         
       - name: Generate English Doxygen documentation
-        run: doxygen Docs/Doxyfile_en
+        run: doxygen Doxyfile_en
 
       - name: Deploy English Docs to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

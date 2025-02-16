@@ -20,7 +20,7 @@ jobs:
         run: mkdir -p Docs/ru
         
       - name: Generate Russian Doxygen documentation
-        run: doxygen Docs/Doxyfile_ru
+        run: doxygen Doxyfile_ru
 
       - name: Deploy Russian Docs to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
