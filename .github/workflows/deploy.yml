@@ -7,34 +7,31 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-lest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Doxygen
+      - name: Install Doxygen
         run: sudo apt-get install doxygen -y
-
-      - name: Create output directories
+        
+      - name: Build documentation
         run: |
-          mkdir -p Docs/ru
-          mkdir -p Docs/en
-          
-      - name: Build documentation (ru)
-        run: doxygen Doxyfile_ru
-
-      - name: Build documentation (en)
-        run: doxygen Doxyfile_en
+          mkdir -p docs/ru docs/en
+          doxygen Doxyfile_en
+          doxygen Doxyfile_ru
 
       - name: Deploy to GitHub Pages (ru)
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./Docs/ru
+          publish_dir: docs/ru
+          nojekyll: true
 
       - name: Deploy to GitHub Pages (en)
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./Docs/en
+          publish_dir: docs/en
+          nojekyll: true
