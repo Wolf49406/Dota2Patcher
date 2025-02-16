@@ -1,3 +1,5 @@
 theme: null
 exclude:
   - assets/css/
+exclude:
+  - assets/css/style.scss
