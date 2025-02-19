@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dota2Patcher: Класс ConfigManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Dota2Patcher
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classConfigManager.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="classConfigManager-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс ConfigManager</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Config_8h_source.html">Config.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:ConfigManager:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classConfigManager.png" usemap="#ConfigManager_map" alt=""/>
+  <map id="ConfigManager_map" name="ConfigManager_map">
+<area href="classRegistryConfig.html" alt="RegistryConfig" shape="rect" coords="0,0,100,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConfigManager_1_1ConfigEntry.html">ConfigEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a8886734ead977405afa96087545fd162" id="r_a8886734ead977405afa96087545fd162"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#a8886734ead977405afa96087545fd162">hacks_enabled</a> ()</td></tr>
+<tr class="separator:a8886734ead977405afa96087545fd162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a8e1d1ee05812483858568c2390d54f" id="r_a3a8e1d1ee05812483858568c2390d54f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#a3a8e1d1ee05812483858568c2390d54f">ask_for_settings</a> ()</td></tr>
+<tr class="separator:a3a8e1d1ee05812483858568c2390d54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763cb2a7e32a232da7c12f8e20f52bc5" id="r_a763cb2a7e32a232da7c12f8e20f52bc5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#a763cb2a7e32a232da7c12f8e20f52bc5">show_settings</a> ()</td></tr>
+<tr class="separator:a763cb2a7e32a232da7c12f8e20f52bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1568a41c9aaf19fd1108cc61379da765" id="r_a1568a41c9aaf19fd1108cc61379da765"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#a1568a41c9aaf19fd1108cc61379da765">read_settings</a> ()</td></tr>
+<tr class="separator:a1568a41c9aaf19fd1108cc61379da765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf42fc008138a765a5ffc5faff0721d4" id="r_adf42fc008138a765a5ffc5faff0721d4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#adf42fc008138a765a5ffc5faff0721d4">write_settings</a> ()</td></tr>
+<tr class="separator:adf42fc008138a765a5ffc5faff0721d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classRegistryConfig"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classRegistryConfig')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены унаследованные от <a class="el" href="classRegistryConfig.html">RegistryConfig</a></td></tr>
+<tr class="memitem:a48b074db08145d755623d927f3b7c83c inherit pub_static_methods_classRegistryConfig" id="r_a48b074db08145d755623d927f3b7c83c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRegistryConfig.html#a48b074db08145d755623d927f3b7c83c">get</a> (const string &amp;valueName, int &amp;out_value)</td></tr>
+<tr class="separator:a48b074db08145d755623d927f3b7c83c inherit pub_static_methods_classRegistryConfig"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a723ef7116c64e9bd07c27bbe9862e7f7 inherit pub_static_methods_classRegistryConfig" id="r_a723ef7116c64e9bd07c27bbe9862e7f7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRegistryConfig.html#a723ef7116c64e9bd07c27bbe9862e7f7">set</a> (const string &amp;valueName, const int value)</td></tr>
+<tr class="separator:a723ef7116c64e9bd07c27bbe9862e7f7 inherit pub_static_methods_classRegistryConfig"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377a7e4fdced2ab64697ba9787f5b23a inherit pub_static_methods_classRegistryConfig" id="r_a377a7e4fdced2ab64697ba9787f5b23a"><td class="memItemLeft" align="right" valign="top">static optional&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRegistryConfig.html#a377a7e4fdced2ab64697ba9787f5b23a">Read</a> (const string &amp;valueName)</td></tr>
+<tr class="separator:a377a7e4fdced2ab64697ba9787f5b23a inherit pub_static_methods_classRegistryConfig"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af090420cc75434c7068de4cb64309c87 inherit pub_static_methods_classRegistryConfig" id="r_af090420cc75434c7068de4cb64309c87"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af090420cc75434c7068de4cb64309c87 inherit pub_static_methods_classRegistryConfig"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classRegistryConfig.html#af090420cc75434c7068de4cb64309c87">Write</a> (const string &amp;valueName, const T &amp;value)</td></tr>
+<tr class="separator:af090420cc75434c7068de4cb64309c87 inherit pub_static_methods_classRegistryConfig"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:abf8c5d7e1c669cdd3c31cef6a7a459b4" id="r_abf8c5d7e1c669cdd3c31cef6a7a459b4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#abf8c5d7e1c669cdd3c31cef6a7a459b4">camera_distance</a> = 1200</td></tr>
+<tr class="separator:abf8c5d7e1c669cdd3c31cef6a7a459b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7f9da8971e91bc26d72b1963b63977" id="r_aba7f9da8971e91bc26d72b1963b63977"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#aba7f9da8971e91bc26d72b1963b63977">fow_amount</a> = 70</td></tr>
+<tr class="separator:aba7f9da8971e91bc26d72b1963b63977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc65251dd0e46b5ac807ac0423dcdcf" id="r_afbc65251dd0e46b5ac807ac0423dcdcf"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#afbc65251dd0e46b5ac807ac0423dcdcf">sv_cheats</a> = false</td></tr>
+<tr class="separator:afbc65251dd0e46b5ac807ac0423dcdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98382325e06f372c0dd99e19b165e596" id="r_a98382325e06f372c0dd99e19b165e596"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#a98382325e06f372c0dd99e19b165e596">fog_enabled</a> = false</td></tr>
+<tr class="separator:a98382325e06f372c0dd99e19b165e596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca2557791aaf9e5968002f0cd601e72" id="r_abca2557791aaf9e5968002f0cd601e72"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#abca2557791aaf9e5968002f0cd601e72">fow_client_nofiltering</a> = false</td></tr>
+<tr class="separator:abca2557791aaf9e5968002f0cd601e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603e3769af233e625a9b4e53582c669d" id="r_a603e3769af233e625a9b4e53582c669d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#a603e3769af233e625a9b4e53582c669d">set_rendering_enabled</a> = false</td></tr>
+<tr class="separator:a603e3769af233e625a9b4e53582c669d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e38d290dcf50508f404ad692df7cbf" id="r_ae5e38d290dcf50508f404ad692df7cbf"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#ae5e38d290dcf50508f404ad692df7cbf">allow_rc_update</a> = false</td></tr>
+<tr class="separator:ae5e38d290dcf50508f404ad692df7cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9765848f9e0b80d8fd5983a85a0db65c" id="r_a9765848f9e0b80d8fd5983a85a0db65c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#a9765848f9e0b80d8fd5983a85a0db65c">visible_by_enemy</a> = false</td></tr>
+<tr class="separator:a9765848f9e0b80d8fd5983a85a0db65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54e18476fee33ce7959b5d2f42c9a1a" id="r_ab54e18476fee33ce7959b5d2f42c9a1a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#ab54e18476fee33ce7959b5d2f42c9a1a">illusions_detection</a> = false</td></tr>
+<tr class="separator:ab54e18476fee33ce7959b5d2f42c9a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07954ff5f60f306ea7af35d53b7e79e4" id="r_a07954ff5f60f306ea7af35d53b7e79e4"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="structConfigManager_1_1ConfigEntry.html">ConfigEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigManager.html#a07954ff5f60f306ea7af35d53b7e79e4">config_entries</a></td></tr>
+<tr class="separator:a07954ff5f60f306ea7af35d53b7e79e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Методы</h2>
+<a id="a3a8e1d1ee05812483858568c2390d54f" name="a3a8e1d1ee05812483858568c2390d54f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a8e1d1ee05812483858568c2390d54f">&#9670;&#160;</a></span>ask_for_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ConfigManager::ask_for_settings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8886734ead977405afa96087545fd162" name="a8886734ead977405afa96087545fd162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8886734ead977405afa96087545fd162">&#9670;&#160;</a></span>hacks_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ConfigManager::hacks_enabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1568a41c9aaf19fd1108cc61379da765" name="a1568a41c9aaf19fd1108cc61379da765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1568a41c9aaf19fd1108cc61379da765">&#9670;&#160;</a></span>read_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ConfigManager::read_settings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a763cb2a7e32a232da7c12f8e20f52bc5" name="a763cb2a7e32a232da7c12f8e20f52bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a763cb2a7e32a232da7c12f8e20f52bc5">&#9670;&#160;</a></span>show_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ConfigManager::show_settings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf42fc008138a765a5ffc5faff0721d4" name="adf42fc008138a765a5ffc5faff0721d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf42fc008138a765a5ffc5faff0721d4">&#9670;&#160;</a></span>write_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ConfigManager::write_settings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="ae5e38d290dcf50508f404ad692df7cbf" name="ae5e38d290dcf50508f404ad692df7cbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5e38d290dcf50508f404ad692df7cbf">&#9670;&#160;</a></span>allow_rc_update</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ConfigManager::allow_rc_update = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf8c5d7e1c669cdd3c31cef6a7a459b4" name="abf8c5d7e1c669cdd3c31cef6a7a459b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf8c5d7e1c669cdd3c31cef6a7a459b4">&#9670;&#160;</a></span>camera_distance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigManager::camera_distance = 1200</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07954ff5f60f306ea7af35d53b7e79e4" name="a07954ff5f60f306ea7af35d53b7e79e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07954ff5f60f306ea7af35d53b7e79e4">&#9670;&#160;</a></span>config_entries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structConfigManager_1_1ConfigEntry.html">ConfigEntry</a>&gt; ConfigManager::config_entries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    { <span class="stringliteral">&quot;camera_distance&quot;</span>, &amp;<a class="code hl_variable" href="classConfigManager.html#abf8c5d7e1c669cdd3c31cef6a7a459b4">camera_distance</a> },</div>
+<div class="line">    { <span class="stringliteral">&quot;fow_amount&quot;</span>, &amp;<a class="code hl_variable" href="classConfigManager.html#aba7f9da8971e91bc26d72b1963b63977">fow_amount</a> },</div>
+<div class="line">    { <span class="stringliteral">&quot;sv_cheats&quot;</span>, &amp;<a class="code hl_variable" href="classConfigManager.html#afbc65251dd0e46b5ac807ac0423dcdcf">sv_cheats</a> },</div>
+<div class="line">    { <span class="stringliteral">&quot;fog_enabled&quot;</span>, &amp;<a class="code hl_variable" href="classConfigManager.html#a98382325e06f372c0dd99e19b165e596">fog_enabled</a> },</div>
+<div class="line">    { <span class="stringliteral">&quot;fow_client_nofiltering&quot;</span>, &amp;<a class="code hl_variable" href="classConfigManager.html#abca2557791aaf9e5968002f0cd601e72">fow_client_nofiltering</a> },</div>
+<div class="line">    { <span class="stringliteral">&quot;set_rendering_enabled&quot;</span>, &amp;<a class="code hl_variable" href="classConfigManager.html#a603e3769af233e625a9b4e53582c669d">set_rendering_enabled</a> },</div>
+<div class="line">    { <span class="stringliteral">&quot;allow_rc_update&quot;</span>, &amp;<a class="code hl_variable" href="classConfigManager.html#ae5e38d290dcf50508f404ad692df7cbf">allow_rc_update</a> },</div>
+<div class="line">    { <span class="stringliteral">&quot;visible_by_enemy&quot;</span>,&amp;<a class="code hl_variable" href="classConfigManager.html#a9765848f9e0b80d8fd5983a85a0db65c">visible_by_enemy</a> },</div>
+<div class="line">    { <span class="stringliteral">&quot;illusions_detection&quot;</span>, &amp;<a class="code hl_variable" href="classConfigManager.html#ab54e18476fee33ce7959b5d2f42c9a1a">illusions_detection</a> },</div>
+<div class="line">    }</div>
+<div class="ttc" id="aclassConfigManager_html_a603e3769af233e625a9b4e53582c669d"><div class="ttname"><a href="classConfigManager.html#a603e3769af233e625a9b4e53582c669d">ConfigManager::set_rendering_enabled</a></div><div class="ttdeci">static bool set_rendering_enabled</div><div class="ttdef"><b>Definition</b> Config.h:64</div></div>
+<div class="ttc" id="aclassConfigManager_html_a9765848f9e0b80d8fd5983a85a0db65c"><div class="ttname"><a href="classConfigManager.html#a9765848f9e0b80d8fd5983a85a0db65c">ConfigManager::visible_by_enemy</a></div><div class="ttdeci">static bool visible_by_enemy</div><div class="ttdef"><b>Definition</b> Config.h:67</div></div>
+<div class="ttc" id="aclassConfigManager_html_a98382325e06f372c0dd99e19b165e596"><div class="ttname"><a href="classConfigManager.html#a98382325e06f372c0dd99e19b165e596">ConfigManager::fog_enabled</a></div><div class="ttdeci">static bool fog_enabled</div><div class="ttdef"><b>Definition</b> Config.h:62</div></div>
+<div class="ttc" id="aclassConfigManager_html_ab54e18476fee33ce7959b5d2f42c9a1a"><div class="ttname"><a href="classConfigManager.html#ab54e18476fee33ce7959b5d2f42c9a1a">ConfigManager::illusions_detection</a></div><div class="ttdeci">static bool illusions_detection</div><div class="ttdef"><b>Definition</b> Config.h:68</div></div>
+<div class="ttc" id="aclassConfigManager_html_aba7f9da8971e91bc26d72b1963b63977"><div class="ttname"><a href="classConfigManager.html#aba7f9da8971e91bc26d72b1963b63977">ConfigManager::fow_amount</a></div><div class="ttdeci">static int fow_amount</div><div class="ttdef"><b>Definition</b> Config.h:60</div></div>
+<div class="ttc" id="aclassConfigManager_html_abca2557791aaf9e5968002f0cd601e72"><div class="ttname"><a href="classConfigManager.html#abca2557791aaf9e5968002f0cd601e72">ConfigManager::fow_client_nofiltering</a></div><div class="ttdeci">static bool fow_client_nofiltering</div><div class="ttdef"><b>Definition</b> Config.h:63</div></div>
+<div class="ttc" id="aclassConfigManager_html_abf8c5d7e1c669cdd3c31cef6a7a459b4"><div class="ttname"><a href="classConfigManager.html#abf8c5d7e1c669cdd3c31cef6a7a459b4">ConfigManager::camera_distance</a></div><div class="ttdeci">static int camera_distance</div><div class="ttdef"><b>Definition</b> Config.h:59</div></div>
+<div class="ttc" id="aclassConfigManager_html_ae5e38d290dcf50508f404ad692df7cbf"><div class="ttname"><a href="classConfigManager.html#ae5e38d290dcf50508f404ad692df7cbf">ConfigManager::allow_rc_update</a></div><div class="ttdeci">static bool allow_rc_update</div><div class="ttdef"><b>Definition</b> Config.h:65</div></div>
+<div class="ttc" id="aclassConfigManager_html_afbc65251dd0e46b5ac807ac0423dcdcf"><div class="ttname"><a href="classConfigManager.html#afbc65251dd0e46b5ac807ac0423dcdcf">ConfigManager::sv_cheats</a></div><div class="ttdeci">static bool sv_cheats</div><div class="ttdef"><b>Definition</b> Config.h:61</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a98382325e06f372c0dd99e19b165e596" name="a98382325e06f372c0dd99e19b165e596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98382325e06f372c0dd99e19b165e596">&#9670;&#160;</a></span>fog_enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ConfigManager::fog_enabled = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba7f9da8971e91bc26d72b1963b63977" name="aba7f9da8971e91bc26d72b1963b63977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7f9da8971e91bc26d72b1963b63977">&#9670;&#160;</a></span>fow_amount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigManager::fow_amount = 70</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abca2557791aaf9e5968002f0cd601e72" name="abca2557791aaf9e5968002f0cd601e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca2557791aaf9e5968002f0cd601e72">&#9670;&#160;</a></span>fow_client_nofiltering</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ConfigManager::fow_client_nofiltering = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab54e18476fee33ce7959b5d2f42c9a1a" name="ab54e18476fee33ce7959b5d2f42c9a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54e18476fee33ce7959b5d2f42c9a1a">&#9670;&#160;</a></span>illusions_detection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ConfigManager::illusions_detection = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a603e3769af233e625a9b4e53582c669d" name="a603e3769af233e625a9b4e53582c669d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a603e3769af233e625a9b4e53582c669d">&#9670;&#160;</a></span>set_rendering_enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ConfigManager::set_rendering_enabled = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbc65251dd0e46b5ac807ac0423dcdcf" name="afbc65251dd0e46b5ac807ac0423dcdcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbc65251dd0e46b5ac807ac0423dcdcf">&#9670;&#160;</a></span>sv_cheats</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ConfigManager::sv_cheats = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9765848f9e0b80d8fd5983a85a0db65c" name="a9765848f9e0b80d8fd5983a85a0db65c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9765848f9e0b80d8fd5983a85a0db65c">&#9670;&#160;</a></span>visible_by_enemy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ConfigManager::visible_by_enemy = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Utils/<a class="el" href="Config_8h_source.html">Config.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classConfigManager.html">ConfigManager</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

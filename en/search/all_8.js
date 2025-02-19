@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['identity_0',['identity',['../classCBaseEntity.html#ad49d54b31781dd3fc56cf8c9b1b19bba',1,'CBaseEntity']]],
+  ['illusions_5fdetection_1',['illusions_detection',['../classConfigManager.html#ab54e18476fee33ce7959b5d2f42c9a1a',1,'ConfigManager']]],
+  ['in_5fgame_2',['in_game',['../classCDOTAGamerules.html#a5af0cc3e543561c9ff53567815a13f88',1,'CDOTAGamerules']]],
+  ['init_3',['INIT',['../CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bafaee4ca3c30ee18148ce3ada37466498',1,'CDOTAGamerules.h']]],
+  ['inrange_4',['InRange',['../Memory_8cpp.html#a77b32f82913a97e575edf2329fbccdce',1,'Memory.cpp']]],
+  ['interface_5',['Interface',['../classInterface.html',1,'']]],
+  ['interface_5fhandlers_6',['interface_handlers',['../structCreateInterface_1_1ModuleInterfaces.html#a4a32019b38c649c4bc4213cbe771c6bd',1,'CreateInterface::ModuleInterfaces']]],
+  ['interfaces_2eh_7',['interfaces.h',['../interfaces_8h.html',1,'']]],
+  ['internal_5fname_8',['internal_name',['../classCEntityIdentity.html#a256b20c827c9ddb1e9ef27d3fe94608f',1,'CEntityIdentity::internal_name()'],['../classCGameEntitySystem.html#acfc86cb3b6c13dea05528aa8333a93cbad143d73d0d449fc3899250a10f8e3152',1,'CGameEntitySystem::internal_name']]],
+  ['invalid_9',['INVALID',['../CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463baccc0377a8afbf50e7094f5c23a8af223',1,'CDOTAGamerules.h']]],
+  ['is_5fhero_10',['is_hero',['../classCEntityIdentity.html#ac76e434c7dc9aaab907bd6a5fd6ec477',1,'CEntityIdentity::is_hero()'],['../classCBaseEntity.html#ae8886e8487b4d16998c7c1a7aa6baff5',1,'CBaseEntity::is_hero()']]],
+  ['is_5fhero_5fassigned_11',['is_hero_assigned',['../classC__DOTAPlayerController.html#a829c4e1be0d7b668f3b8adb2edf03944',1,'C_DOTAPlayerController']]],
+  ['is_5fillusion_12',['is_illusion',['../classCBaseEntity.html#abfe2e0be86b0a655fa0824f91981f21e',1,'CBaseEntity']]],
+  ['is_5flocal_5fplayer_13',['is_local_player',['../classC__DOTAPlayerController.html#af1492fc7d57ad6c5f83618a94fc9a05b',1,'C_DOTAPlayerController']]],
+  ['is_5fnetvar_14',['is_netvar',['../classSchemaClassFieldData__t.html#a77f58c67a795485dcca8390aecc7259c',1,'SchemaClassFieldData_t']]],
+  ['is_5fvalid_5fhandle_15',['is_valid_handle',['../classProcessHandle.html#a65f86019853763265eebcba4c8795cfa',1,'ProcessHandle']]],
+  ['is_5fvalid_5fptr_16',['is_valid_ptr',['../classMemory.html#a51fb3a2b9ab9cb9e927736ee8ae9516d',1,'Memory']]],
+  ['iterate_5fnetvars_17',['iterate_netvars',['../classCSchemaSystem.html#a1eb430d5c276154345c89f23ef0208e6',1,'CSchemaSystem']]]
+];

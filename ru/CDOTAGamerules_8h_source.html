@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dota2Patcher: Исходный файл SourceSDK/CDOTAGamerules.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Dota2Patcher
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('CDOTAGamerules_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CDOTAGamerules.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="CDOTAGamerules_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;../Utils/Memory.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463b">    4</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463b">DOTA_GameState</a> : <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463baccc0377a8afbf50e7094f5c23a8af223">INVALID</a> = -1,</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bafaee4ca3c30ee18148ce3ada37466498">INIT</a> = 0,</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bafe9b06cb260027d80d3f348c11283512">WAIT_FOR_PLAYERS_TO_LOAD</a> = 1,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bac79a7a3870a4b5cabcc68aec94a4a9e8">HERO_SELECTION</a> = 2,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bae904180929f764d1770a90a26a74003e">STRATEGY_TIME</a> = 3,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463ba628df634490bb8251bc8b99d8b6ff9d4">PRE_GAME</a> = 4,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463baf64db7dd2324faa0967465280daa51a4">GAME_IN_PROGRESS</a> = 5,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bac81c108e7d4243a8c425a7f92c23bde9">POST_GAME</a> = 6,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463badd7cd0eb57db08d4f98abc48e5593462">DISCONNECT</a> = 7,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bad37e43eef94fa255140051e9e860873c">TEAM_SHOWCASE</a> = 8,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bafd9c344b0f85c1db6a39b298ecca199c">CUSTOM_GAME_SETUP</a> = 9,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463ba8d845cb13ed072795e9e3286e480ddf0">WAIT_FOR_MAP_TO_LOAD</a> = 10,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bacde316aab51b88c478a2f4b7ad282662">SCENARIO_SETUP</a> = 11,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bae6568cc53dbc4918c6b9b6a18b883f7f">PLAYER_DRAFT</a> = 12,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463baf447f5c03508de4d88e340390ba7c78f">LAST</a> = 13,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classCDOTAGamerules.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classCDOTAGamerules.html">CDOTAGamerules</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classCDOTAGamerules.html#a8004c107b9e5a86e1600cdfe73f3d421">   24</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCDOTAGamerules.html#a8004c107b9e5a86e1600cdfe73f3d421">paused</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="classCDOTAGamerules.html#a8004c107b9e5a86e1600cdfe73f3d421">paused</a> = <a class="code hl_function" href="classMemory.html#a4541d3b0ef264a02be0f4e4e9fbadf7d">Memory::read_memory&lt;bool&gt;</a>(<span class="keyword">this</span> + 0x38);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classCDOTAGamerules.html#a8004c107b9e5a86e1600cdfe73f3d421">paused</a>.value_or(0) != 0;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classCDOTAGamerules.html#a10ed9bf55f0f9dc2d083c2f52db74d9d">   29</a></span>    <a class="code hl_enumeration" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463b">DOTA_GameState</a> <a class="code hl_function" href="classCDOTAGamerules.html#a10ed9bf55f0f9dc2d083c2f52db74d9d">game_state</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="classCDOTAGamerules.html#a10ed9bf55f0f9dc2d083c2f52db74d9d">game_state</a> = <a class="code hl_function" href="classMemory.html#a4541d3b0ef264a02be0f4e4e9fbadf7d">Memory::read_memory&lt;int&gt;</a>(<span class="keyword">this</span> + 0x74);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classCDOTAGamerules.html#a10ed9bf55f0f9dc2d083c2f52db74d9d">game_state</a>.has_value() ? <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463b">DOTA_GameState</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="classCDOTAGamerules.html#a10ed9bf55f0f9dc2d083c2f52db74d9d">game_state</a>.value()) : <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463baccc0377a8afbf50e7094f5c23a8af223">DOTA_GameState::INVALID</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classCDOTAGamerules.html#a5af0cc3e543561c9ff53567815a13f88">   34</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCDOTAGamerules.html#a5af0cc3e543561c9ff53567815a13f88">in_game</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="classCDOTAGamerules.html#a10ed9bf55f0f9dc2d083c2f52db74d9d">game_state</a> = this-&gt;<a class="code hl_function" href="classCDOTAGamerules.html#a10ed9bf55f0f9dc2d083c2f52db74d9d">game_state</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classCDOTAGamerules.html#a10ed9bf55f0f9dc2d083c2f52db74d9d">game_state</a> == <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463ba628df634490bb8251bc8b99d8b6ff9d4">DOTA_GameState::PRE_GAME</a> || <a class="code hl_function" href="classCDOTAGamerules.html#a10ed9bf55f0f9dc2d083c2f52db74d9d">game_state</a> == <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463baf64db7dd2324faa0967465280daa51a4">DOTA_GameState::GAME_IN_PROGRESS</a> || <a class="code hl_function" href="classCDOTAGamerules.html#a10ed9bf55f0f9dc2d083c2f52db74d9d">game_state</a> == <a class="code hl_enumvalue" href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bac81c108e7d4243a8c425a7f92c23bde9">DOTA_GameState::POST_GAME</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classC__DOTAGamerulesProxy.html">   40</a></span><span class="keyword">class </span><a class="code hl_class" href="classC__DOTAGamerulesProxy.html">C_DOTAGamerulesProxy</a> {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classC__DOTAGamerulesProxy.html#a0117ae7ac86f561af04b59b62df9e0ba">   42</a></span>    <a class="code hl_class" href="classCDOTAGamerules.html">CDOTAGamerules</a>* <a class="code hl_function" href="classC__DOTAGamerulesProxy.html#a0117ae7ac86f561af04b59b62df9e0ba">gamerules</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classMemory.html#a4541d3b0ef264a02be0f4e4e9fbadf7d">Memory::read_memory&lt;CDOTAGamerules*&gt;</a>(<span class="keyword">this</span> + 0x510).value_or(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+</div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463b"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463b">DOTA_GameState</a></div><div class="ttdeci">DOTA_GameState</div><div class="ttdef"><b>Definition</b> CDOTAGamerules.h:4</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463ba628df634490bb8251bc8b99d8b6ff9d4"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463ba628df634490bb8251bc8b99d8b6ff9d4">DOTA_GameState::PRE_GAME</a></div><div class="ttdeci">@ PRE_GAME</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463ba8d845cb13ed072795e9e3286e480ddf0"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463ba8d845cb13ed072795e9e3286e480ddf0">DOTA_GameState::WAIT_FOR_MAP_TO_LOAD</a></div><div class="ttdeci">@ WAIT_FOR_MAP_TO_LOAD</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463bac79a7a3870a4b5cabcc68aec94a4a9e8"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bac79a7a3870a4b5cabcc68aec94a4a9e8">DOTA_GameState::HERO_SELECTION</a></div><div class="ttdeci">@ HERO_SELECTION</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463bac81c108e7d4243a8c425a7f92c23bde9"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bac81c108e7d4243a8c425a7f92c23bde9">DOTA_GameState::POST_GAME</a></div><div class="ttdeci">@ POST_GAME</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463baccc0377a8afbf50e7094f5c23a8af223"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463baccc0377a8afbf50e7094f5c23a8af223">DOTA_GameState::INVALID</a></div><div class="ttdeci">@ INVALID</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463bacde316aab51b88c478a2f4b7ad282662"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bacde316aab51b88c478a2f4b7ad282662">DOTA_GameState::SCENARIO_SETUP</a></div><div class="ttdeci">@ SCENARIO_SETUP</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463bad37e43eef94fa255140051e9e860873c"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bad37e43eef94fa255140051e9e860873c">DOTA_GameState::TEAM_SHOWCASE</a></div><div class="ttdeci">@ TEAM_SHOWCASE</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463badd7cd0eb57db08d4f98abc48e5593462"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463badd7cd0eb57db08d4f98abc48e5593462">DOTA_GameState::DISCONNECT</a></div><div class="ttdeci">@ DISCONNECT</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463bae6568cc53dbc4918c6b9b6a18b883f7f"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bae6568cc53dbc4918c6b9b6a18b883f7f">DOTA_GameState::PLAYER_DRAFT</a></div><div class="ttdeci">@ PLAYER_DRAFT</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463bae904180929f764d1770a90a26a74003e"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bae904180929f764d1770a90a26a74003e">DOTA_GameState::STRATEGY_TIME</a></div><div class="ttdeci">@ STRATEGY_TIME</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463baf447f5c03508de4d88e340390ba7c78f"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463baf447f5c03508de4d88e340390ba7c78f">DOTA_GameState::LAST</a></div><div class="ttdeci">@ LAST</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463baf64db7dd2324faa0967465280daa51a4"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463baf64db7dd2324faa0967465280daa51a4">DOTA_GameState::GAME_IN_PROGRESS</a></div><div class="ttdeci">@ GAME_IN_PROGRESS</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463bafaee4ca3c30ee18148ce3ada37466498"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bafaee4ca3c30ee18148ce3ada37466498">DOTA_GameState::INIT</a></div><div class="ttdeci">@ INIT</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463bafd9c344b0f85c1db6a39b298ecca199c"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bafd9c344b0f85c1db6a39b298ecca199c">DOTA_GameState::CUSTOM_GAME_SETUP</a></div><div class="ttdeci">@ CUSTOM_GAME_SETUP</div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html_a12fd0ac558a0f483daa4ca92d763463bafe9b06cb260027d80d3f348c11283512"><div class="ttname"><a href="CDOTAGamerules_8h.html#a12fd0ac558a0f483daa4ca92d763463bafe9b06cb260027d80d3f348c11283512">DOTA_GameState::WAIT_FOR_PLAYERS_TO_LOAD</a></div><div class="ttdeci">@ WAIT_FOR_PLAYERS_TO_LOAD</div></div>
+<div class="ttc" id="aclassCDOTAGamerules_html"><div class="ttname"><a href="classCDOTAGamerules.html">CDOTAGamerules</a></div><div class="ttdef"><b>Definition</b> CDOTAGamerules.h:22</div></div>
+<div class="ttc" id="aclassCDOTAGamerules_html_a10ed9bf55f0f9dc2d083c2f52db74d9d"><div class="ttname"><a href="classCDOTAGamerules.html#a10ed9bf55f0f9dc2d083c2f52db74d9d">CDOTAGamerules::game_state</a></div><div class="ttdeci">DOTA_GameState game_state() const</div><div class="ttdef"><b>Definition</b> CDOTAGamerules.h:29</div></div>
+<div class="ttc" id="aclassCDOTAGamerules_html_a5af0cc3e543561c9ff53567815a13f88"><div class="ttname"><a href="classCDOTAGamerules.html#a5af0cc3e543561c9ff53567815a13f88">CDOTAGamerules::in_game</a></div><div class="ttdeci">bool in_game() const</div><div class="ttdef"><b>Definition</b> CDOTAGamerules.h:34</div></div>
+<div class="ttc" id="aclassCDOTAGamerules_html_a8004c107b9e5a86e1600cdfe73f3d421"><div class="ttname"><a href="classCDOTAGamerules.html#a8004c107b9e5a86e1600cdfe73f3d421">CDOTAGamerules::paused</a></div><div class="ttdeci">bool paused() const</div><div class="ttdef"><b>Definition</b> CDOTAGamerules.h:24</div></div>
+<div class="ttc" id="aclassC__DOTAGamerulesProxy_html"><div class="ttname"><a href="classC__DOTAGamerulesProxy.html">C_DOTAGamerulesProxy</a></div><div class="ttdef"><b>Definition</b> CDOTAGamerules.h:40</div></div>
+<div class="ttc" id="aclassC__DOTAGamerulesProxy_html_a0117ae7ac86f561af04b59b62df9e0ba"><div class="ttname"><a href="classC__DOTAGamerulesProxy.html#a0117ae7ac86f561af04b59b62df9e0ba">C_DOTAGamerulesProxy::gamerules</a></div><div class="ttdeci">CDOTAGamerules * gamerules() const</div><div class="ttdef"><b>Definition</b> CDOTAGamerules.h:42</div></div>
+<div class="ttc" id="aclassMemory_html_a4541d3b0ef264a02be0f4e4e9fbadf7d"><div class="ttname"><a href="classMemory.html#a4541d3b0ef264a02be0f4e4e9fbadf7d">Memory::read_memory</a></div><div class="ttdeci">static optional&lt; T &gt; read_memory(const N &amp;address)</div><div class="ttdef"><b>Definition</b> Memory.h:83</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_93c06862e408d37a7ec1a83236876a76.html">SourceSDK</a></li><li class="navelem"><a class="el" href="CDOTAGamerules_8h.html">CDOTAGamerules.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
