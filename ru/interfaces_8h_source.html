@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dota2Patcher: Исходный файл SourceSDK/interfaces.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Dota2Patcher
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('interfaces_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">interfaces.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="interfaces_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="CEngineClient_8h.html">CEngineClient.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="CSource2Client_8h.html">CSource2Client.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="CDOTAGamerules_8h.html">CDOTAGamerules.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="CDOTACamera_8h.html">CDOTACamera.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="CGameEntitySystem_8h.html">CGameEntitySystem.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="CSchemaSystem_8h.html">CSchemaSystem.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="CCvar_8h.html">CCvar.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;../Hacks/Hacks.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classScanner.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classScanner.html">Scanner</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classScanner.html#ac8eebcbb10b380ad04345684147f3b79">find_CGameEntitySystem</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classScanner.html#a67b7c55f576e96a6219d29c491087ea3">find_CDOTACamera</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classScanner.html#a0413a33919b5873fed8d1e8c26ca643a">find_CDOTAGamerules</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classScanner.html#a1dcbb34a5b3bf7afa7ddd1a7b8d7ac6c">find_all</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">static</span> <span class="keyword">class </span>dota_interfaces {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> find_all() {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classScanner.html#a1dcbb34a5b3bf7afa7ddd1a7b8d7ac6c">Scanner::find_all</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_class" href="classCEngineClient.html">CEngineClient</a>* engine = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_class" href="classCSource2Client.html">CSource2Client</a>* client = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_class" href="classCDOTAGamerules.html">CDOTAGamerules</a>* gamerules = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_class" href="classCDOTACamera.html">CDOTACamera</a>* camera = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_class" href="classCGameEntitySystem.html">CGameEntitySystem</a>* entity_system = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_class" href="classCSchemaSystem.html">CSchemaSystem</a>* schema_system = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_class" href="classCCvar.html">CCvar</a>* cvar = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>} vmt;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classScanner.html#a1dcbb34a5b3bf7afa7ddd1a7b8d7ac6c">   36</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classScanner.html#a1dcbb34a5b3bf7afa7ddd1a7b8d7ac6c">Scanner::find_all</a>() {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">bool</span> status = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    status &amp;= <a class="code hl_function" href="classScanner.html#ac8eebcbb10b380ad04345684147f3b79">find_CGameEntitySystem</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    status &amp;= <a class="code hl_function" href="classScanner.html#a67b7c55f576e96a6219d29c491087ea3">find_CDOTACamera</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> status;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classScanner.html#ac8eebcbb10b380ad04345684147f3b79">   45</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classScanner.html#ac8eebcbb10b380ad04345684147f3b79">Scanner::find_CGameEntitySystem</a>() {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">if</span> (vmt.entity_system)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> <span class="keyword">auto</span> base = <a class="code hl_function" href="classMemory.html#a4541d3b0ef264a02be0f4e4e9fbadf7d">Memory::virtual_function&lt;uintptr_t&gt;</a>(vmt.client, 30);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">if</span> (!base)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> <span class="keyword">auto</span> absolute_address_ptr = <a class="code hl_function" href="classMemory.html#a4541d3b0ef264a02be0f4e4e9fbadf7d">Memory::absolute_address&lt;uintptr_t&gt;</a>(base.value());</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span> (!absolute_address_ptr)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">const</span> <span class="keyword">auto</span> CGameEntitySystem_ptr = <a class="code hl_function" href="classMemory.html#a4541d3b0ef264a02be0f4e4e9fbadf7d">Memory::read_memory&lt;uintptr_t&gt;</a>(absolute_address_ptr.value());</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (!CGameEntitySystem_ptr || CGameEntitySystem_ptr.value_or(0) == 0)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    vmt.entity_system = <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_class" href="classCGameEntitySystem.html">CGameEntitySystem</a>*<span class="keyword">&gt;</span>(CGameEntitySystem_ptr.value());</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    LOG::INFO(<span class="stringliteral">&quot;CGameEntitySystem -&gt; [{}]&quot;</span>, TO_VOID(CGameEntitySystem_ptr.value()));</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">// #STR: &quot;Failed to create camera\n&quot;, &quot;Failed to init camera with file %s&quot;, &quot;Usage: &lt;camera_file&gt;\n&quot;</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">// lea      rax, ??_7CDOTACameraManager@@6B@ ; const CDOTACameraManager::`vftable&#39;</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// mov      cs:byte_1851E0C18, 0</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// mov      cs:qword_1851E0B90, rax</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// lea      rcx, sub_182FD0C10 ; void (__cdecl *)() &lt;&lt;&lt;&lt;</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">// lea      rax, ??_7CDOTACameraManager@@6B@_0 ; const CDOTACameraManager::`vftable&#39;</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">// mov      cs:dword_1851E0C1C, 0FFFFFFFFh</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">// mov      cs:qword_1851E0B98, rax</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">// call     atexit</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">// lea      rcx, dword_1851E0C20</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">// call     _Init_thread_footer</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">// jmp      loc_181713F7F</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// endp</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">//</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">// sub_182FD0C10:</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// lea      rax, ??_7CDOTACameraManager@@6B@ ; const CDOTACameraManager::`vftable&#39;</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// mov      cs:qword_1851E0B90, rax</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// lea      rcx, qword_1851E0B90 &lt;&lt;&lt;&lt;</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// lea      rax, ??_7CDOTACameraManager@@6B@_0 ; const CDOTACameraManager::`vftable&#39;</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// mov      cs:qword_1851E0B98, rax</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">// jmp      sub_181499FC0</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">// endp</span></div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classScanner.html#a67b7c55f576e96a6219d29c491087ea3">   88</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classScanner.html#a67b7c55f576e96a6219d29c491087ea3">Scanner::find_CDOTACamera</a>() {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span> (vmt.camera)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">const</span> <span class="keyword">auto</span> base = <a class="code hl_function" href="classMemory.html#a84a8293998a7fa36d58d36aac761b47a">Memory::pattern_scan</a>(<span class="stringliteral">&quot;client.dll&quot;</span>, <a class="code hl_variable" href="structPatches_1_1Patterns.html#acecc9af18f84c2fdada1a95e2efd16a2">Patches::Patterns::CDOTACamera</a>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span> (!base)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">const</span> <span class="keyword">auto</span> camera_base_address = <a class="code hl_function" href="classMemory.html#a4541d3b0ef264a02be0f4e4e9fbadf7d">Memory::absolute_address&lt;uintptr_t&gt;</a>(base.value());</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">if</span> (!camera_base_address || camera_base_address.value_or(0) == 0)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    vmt.camera = <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_class" href="classCDOTACamera.html">CDOTACamera</a>*<span class="keyword">&gt;</span>(camera_base_address.value() - 0x40);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    LOG::INFO(<span class="stringliteral">&quot;CDOTA_Camera -&gt; [{}]&quot;</span>, TO_VOID(vmt.camera));</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classScanner.html#a0413a33919b5873fed8d1e8c26ca643a">  105</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classScanner.html#a0413a33919b5873fed8d1e8c26ca643a">Scanner::find_CDOTAGamerules</a>() {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">const</span> <span class="keyword">auto</span> dota_gamerules_proxy_ptr = vmt.entity_system-&gt;find_by_name(<a class="code hl_enumvalue" href="Enums_8h.html#a72e5d6c2f25ce96cc5a691e05c2e1f63a5028dfb7da57f2c017e24eb2d1cfc310">ENTITY_NAME_TYPE::BINARY_NAME</a>, <span class="stringliteral">&quot;C_DOTAGamerulesProxy&quot;</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">if</span> (!dota_gamerules_proxy_ptr)</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_class" href="classC__DOTAGamerulesProxy.html">C_DOTAGamerulesProxy</a>* dota_gamerules_proxy = <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_class" href="classC__DOTAGamerulesProxy.html">C_DOTAGamerulesProxy</a>*<span class="keyword">&gt;</span>(dota_gamerules_proxy_ptr.value());</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">const</span> <span class="keyword">auto</span> dota_gamerules_ptr = dota_gamerules_proxy-&gt;<a class="code hl_function" href="classC__DOTAGamerulesProxy.html#a0117ae7ac86f561af04b59b62df9e0ba">gamerules</a>();</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">if</span> (!dota_gamerules_ptr)</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">if</span> (vmt.gamerules == dota_gamerules_ptr)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    vmt.gamerules = dota_gamerules_ptr;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    LOG::INFO(<span class="stringliteral">&quot;C_DOTAGamerules_Proxy -&gt; [{}]&quot;</span>, TO_VOID(dota_gamerules_proxy_ptr.value()));</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    LOG::INFO(<span class="stringliteral">&quot;CDOTAGamerules -&gt; [{}]&quot;</span>, TO_VOID(vmt.gamerules));</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
+</div>
+<div class="ttc" id="aCCvar_8h_html"><div class="ttname"><a href="CCvar_8h.html">CCvar.h</a></div></div>
+<div class="ttc" id="aCDOTACamera_8h_html"><div class="ttname"><a href="CDOTACamera_8h.html">CDOTACamera.h</a></div></div>
+<div class="ttc" id="aCDOTAGamerules_8h_html"><div class="ttname"><a href="CDOTAGamerules_8h.html">CDOTAGamerules.h</a></div></div>
+<div class="ttc" id="aCEngineClient_8h_html"><div class="ttname"><a href="CEngineClient_8h.html">CEngineClient.h</a></div></div>
+<div class="ttc" id="aCGameEntitySystem_8h_html"><div class="ttname"><a href="CGameEntitySystem_8h.html">CGameEntitySystem.h</a></div></div>
+<div class="ttc" id="aCSchemaSystem_8h_html"><div class="ttname"><a href="CSchemaSystem_8h.html">CSchemaSystem.h</a></div></div>
+<div class="ttc" id="aCSource2Client_8h_html"><div class="ttname"><a href="CSource2Client_8h.html">CSource2Client.h</a></div></div>
+<div class="ttc" id="aEnums_8h_html_a72e5d6c2f25ce96cc5a691e05c2e1f63a5028dfb7da57f2c017e24eb2d1cfc310"><div class="ttname"><a href="Enums_8h.html#a72e5d6c2f25ce96cc5a691e05c2e1f63a5028dfb7da57f2c017e24eb2d1cfc310">ENTITY_NAME_TYPE::BINARY_NAME</a></div><div class="ttdeci">@ BINARY_NAME</div></div>
+<div class="ttc" id="aclassCCvar_html"><div class="ttname"><a href="classCCvar.html">CCvar</a></div><div class="ttdef"><b>Definition</b> CCvar.h:29</div></div>
+<div class="ttc" id="aclassCDOTACamera_html"><div class="ttname"><a href="classCDOTACamera.html">CDOTACamera</a></div><div class="ttdef"><b>Definition</b> CDOTACamera.h:6</div></div>
+<div class="ttc" id="aclassCDOTAGamerules_html"><div class="ttname"><a href="classCDOTAGamerules.html">CDOTAGamerules</a></div><div class="ttdef"><b>Definition</b> CDOTAGamerules.h:4</div></div>
+<div class="ttc" id="aclassCEngineClient_html"><div class="ttname"><a href="classCEngineClient.html">CEngineClient</a></div><div class="ttdef"><b>Definition</b> CEngineClient.h:3</div></div>
+<div class="ttc" id="aclassCGameEntitySystem_html"><div class="ttname"><a href="classCGameEntitySystem.html">CGameEntitySystem</a></div><div class="ttdef"><b>Definition</b> CGameEntitySystem.h:31</div></div>
+<div class="ttc" id="aclassCSchemaSystem_html"><div class="ttname"><a href="classCSchemaSystem.html">CSchemaSystem</a></div><div class="ttdef"><b>Definition</b> CSchemaSystem.h:152</div></div>
+<div class="ttc" id="aclassCSource2Client_html"><div class="ttname"><a href="classCSource2Client.html">CSource2Client</a></div><div class="ttdef"><b>Definition</b> CSource2Client.h:3</div></div>
+<div class="ttc" id="aclassC__DOTAGamerulesProxy_html"><div class="ttname"><a href="classC__DOTAGamerulesProxy.html">C_DOTAGamerulesProxy</a></div><div class="ttdef"><b>Definition</b> CDOTAGamerules.h:22</div></div>
+<div class="ttc" id="aclassC__DOTAGamerulesProxy_html_a0117ae7ac86f561af04b59b62df9e0ba"><div class="ttname"><a href="classC__DOTAGamerulesProxy.html#a0117ae7ac86f561af04b59b62df9e0ba">C_DOTAGamerulesProxy::gamerules</a></div><div class="ttdeci">CDOTAGamerules * gamerules() const</div><div class="ttdef"><b>Definition</b> CDOTAGamerules.h:24</div></div>
+<div class="ttc" id="aclassMemory_html_a4541d3b0ef264a02be0f4e4e9fbadf7d"><div class="ttname"><a href="classMemory.html#a4541d3b0ef264a02be0f4e4e9fbadf7d">Memory::read_memory</a></div><div class="ttdeci">static optional&lt; T &gt; read_memory(const N &amp;address)</div><div class="ttdef"><b>Definition</b> Memory.h:78</div></div>
+<div class="ttc" id="aclassMemory_html_a84a8293998a7fa36d58d36aac761b47a"><div class="ttname"><a href="classMemory.html#a84a8293998a7fa36d58d36aac761b47a">Memory::pattern_scan</a></div><div class="ttdeci">static optional&lt; uintptr_t &gt; pattern_scan(const string &amp;target_module, const string &amp;target_pattern)</div><div class="ttdef"><b>Definition</b> Memory.cpp:25</div></div>
+<div class="ttc" id="aclassScanner_html"><div class="ttname"><a href="classScanner.html">Scanner</a></div><div class="ttdef"><b>Definition</b> interfaces.h:11</div></div>
+<div class="ttc" id="aclassScanner_html_a0413a33919b5873fed8d1e8c26ca643a"><div class="ttname"><a href="classScanner.html#a0413a33919b5873fed8d1e8c26ca643a">Scanner::find_CDOTAGamerules</a></div><div class="ttdeci">static bool find_CDOTAGamerules()</div><div class="ttdef"><b>Definition</b> interfaces.h:105</div></div>
+<div class="ttc" id="aclassScanner_html_a1dcbb34a5b3bf7afa7ddd1a7b8d7ac6c"><div class="ttname"><a href="classScanner.html#a1dcbb34a5b3bf7afa7ddd1a7b8d7ac6c">Scanner::find_all</a></div><div class="ttdeci">static bool find_all()</div><div class="ttdef"><b>Definition</b> interfaces.h:36</div></div>
+<div class="ttc" id="aclassScanner_html_a67b7c55f576e96a6219d29c491087ea3"><div class="ttname"><a href="classScanner.html#a67b7c55f576e96a6219d29c491087ea3">Scanner::find_CDOTACamera</a></div><div class="ttdeci">static bool find_CDOTACamera()</div><div class="ttdef"><b>Definition</b> interfaces.h:88</div></div>
+<div class="ttc" id="aclassScanner_html_ac8eebcbb10b380ad04345684147f3b79"><div class="ttname"><a href="classScanner.html#ac8eebcbb10b380ad04345684147f3b79">Scanner::find_CGameEntitySystem</a></div><div class="ttdeci">static bool find_CGameEntitySystem()</div><div class="ttdef"><b>Definition</b> interfaces.h:45</div></div>
+<div class="ttc" id="astructPatches_1_1Patterns_html_acecc9af18f84c2fdada1a95e2efd16a2"><div class="ttname"><a href="structPatches_1_1Patterns.html#acecc9af18f84c2fdada1a95e2efd16a2">Patches::Patterns::CDOTACamera</a></div><div class="ttdeci">static const string CDOTACamera</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_93c06862e408d37a7ec1a83236876a76.html">SourceSDK</a></li><li class="navelem"><a class="el" href="interfaces_8h.html">interfaces.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

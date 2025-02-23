@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dota2Patcher: Исходный файл Dota2Patcher.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Dota2Patcher
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('Dota2Patcher_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dota2Patcher.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Dota2Patcher_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">static</span> <span class="keywordtype">void</span> draw_logo() {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* ascii = R<span class="stringliteral">&quot;(</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="stringliteral">  _____        _        ___  _____      _       _               </span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="stringliteral"> |  __ \      | |      |__ \|  __ \    | |     | |              </span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="stringliteral"> | |  | | ___ | |_ __ _   ) | |__) |_ _| |_ ___| |__   ___ _ __ </span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="stringliteral"> | |  | |/ _ \| __/ _` | / /|  ___/ _` | __/ __| &#39;_ \ / _ \ &#39;__|</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="stringliteral"> | |__| | (_) | || (_| |/ /_| |  | (_| | || (__| | | |  __/ |   </span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="stringliteral"> |_____/ \___/ \__\__,_|____|_|   \__,_|\__\___|_| |_|\___|_|   </span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="stringliteral"> [!] To open settings, launch Dota2Patcher with SHIFT pressed</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="stringliteral">)&quot;;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="stringliteral">    cout &lt;&lt; ascii &lt;&lt; endl;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="stringliteral">}</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="stringliteral"></span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classPatches.html">   17</a></span><span class="stringliteral"></span><span class="keyword">class </span><a class="code hl_class" href="classPatches.html">Patches</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structPatches_1_1Patterns.html">   19</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structPatches_1_1Patterns.html">Patterns</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structPatches_1_1Patterns.html#a4c627dc5571b0136431ed39dffe9ab0f">   20</a></span>        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="structPatches_1_1Patterns.html#a4c627dc5571b0136431ed39dffe9ab0f">create_interface</a> = <span class="stringliteral">&quot;4C 8B ? ? ? ? ? 4C 8B ? 4C 8B ? 4D 85 ? 74 ? 49 8B ? ? 4D 8B&quot;</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structPatches_1_1Patterns.html#acecc9af18f84c2fdada1a95e2efd16a2">   21</a></span>        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_class" href="classCDOTACamera.html">CDOTACamera</a> = <span class="stringliteral">&quot;48 8D ? ? ? ? ? 48 8D ? ? ? ? ? 48 89 ? ? ? ? ? E9 ? ? ? ? CC CC CC CC CC CC CC CC 48 8D&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structPatches_1_1Patterns.html#a996e9dbd7ed7adb7d4cf84ba615a917f">   22</a></span>        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="structPatches_1_1Patterns.html#a996e9dbd7ed7adb7d4cf84ba615a917f">set_rendering_enabled</a> = <span class="stringliteral">&quot;0F 84 ? ? ? ? 4D 89 73&quot;</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structPatches_1_1Patterns.html#a6179b8f3ff6371cd1b7863871af7b568">   23</a></span>        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="structPatches_1_1Patterns.html#a6179b8f3ff6371cd1b7863871af7b568">set_rendering_enabled_fix</a> = <span class="stringliteral">&quot;0F 84 ? ? ? ? 48 8B ? 48 85 ? 74 ? 48 8B ? 48 8B&quot;</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structPatches_1_1Patterns.html#a6af03ea2208e1ff409844608aec54d4e">   24</a></span>        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="structPatches_1_1Patterns.html#a6af03ea2208e1ff409844608aec54d4e">visible_by_enemy</a> = <span class="stringliteral">&quot;75 ? 41 8B CE E8 ? ? ? ? 48 85 C0 74 ? 80 B8&quot;</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    };</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structPatches_1_1PatchInfo.html">   27</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structPatches_1_1PatchInfo.html">PatchInfo</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structPatches_1_1PatchInfo.html#ad2499e775c7d459117977aeee81a5408">   28</a></span>        <span class="keywordtype">string</span> <a class="code hl_variable" href="structPatches_1_1PatchInfo.html#ad2499e775c7d459117977aeee81a5408">name</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">string</span> <span class="keyword">module</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structPatches_1_1PatchInfo.html#ae76f7a4597b8199a2828408326ce185f">   30</a></span>        <span class="keywordtype">string</span> <a class="code hl_variable" href="structPatches_1_1PatchInfo.html#ae76f7a4597b8199a2828408326ce185f">pattern</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structPatches_1_1PatchInfo.html#a85418921139e4ac9968888d05210a521">   31</a></span>        <a class="code hl_enumeration" href="Enums_8h.html#a6d16e31d0ab48cb10d76d2504d6df290">PATCH_TYPE</a> <a class="code hl_variable" href="structPatches_1_1PatchInfo.html#a85418921139e4ac9968888d05210a521">patch_type</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structPatches_1_1PatchInfo.html#af00d7a95d88c4a674833711908e2c5e1">   32</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structPatches_1_1PatchInfo.html#af00d7a95d88c4a674833711908e2c5e1">offset</a> = 0;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structPatches_1_1PatchInfo.html#a6326f173c40b7b1cfac62aaca6d4429a">   33</a></span>        <span class="keywordtype">string</span> <a class="code hl_variable" href="structPatches_1_1PatchInfo.html#a6326f173c40b7b1cfac62aaca6d4429a">custom_patch_bytes</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    };</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classPatches.html#af9daf2b696eea8ffd65885048f03ede1">   36</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classPatches.html#af9daf2b696eea8ffd65885048f03ede1">add_patch</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structPatches_1_1PatchInfo.html">PatchInfo</a>&amp; patch) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_variable" href="classPatches.html#afeccaf16d1c824dd3194f6f73d81c862">g_patches</a>.push_back(patch);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classPatches.html#afeccaf16d1c824dd3194f6f73d81c862">   40</a></span>    <span class="keyword">static</span> <span class="keyword">inline</span> std::vector&lt;PatchInfo&gt; <a class="code hl_variable" href="classPatches.html#afeccaf16d1c824dd3194f6f73d81c862">g_patches</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+</div>
+<div class="ttc" id="aEnums_8h_html_a6d16e31d0ab48cb10d76d2504d6df290"><div class="ttname"><a href="Enums_8h.html#a6d16e31d0ab48cb10d76d2504d6df290">PATCH_TYPE</a></div><div class="ttdeci">PATCH_TYPE</div><div class="ttdef"><b>Definition</b> Enums.h:28</div></div>
+<div class="ttc" id="aclassCDOTACamera_html"><div class="ttname"><a href="classCDOTACamera.html">CDOTACamera</a></div><div class="ttdef"><b>Definition</b> CDOTACamera.h:6</div></div>
+<div class="ttc" id="aclassPatches_html"><div class="ttname"><a href="classPatches.html">Patches</a></div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:17</div></div>
+<div class="ttc" id="aclassPatches_html_af9daf2b696eea8ffd65885048f03ede1"><div class="ttname"><a href="classPatches.html#af9daf2b696eea8ffd65885048f03ede1">Patches::add_patch</a></div><div class="ttdeci">static void add_patch(const PatchInfo &amp;patch)</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:36</div></div>
+<div class="ttc" id="aclassPatches_html_afeccaf16d1c824dd3194f6f73d81c862"><div class="ttname"><a href="classPatches.html#afeccaf16d1c824dd3194f6f73d81c862">Patches::g_patches</a></div><div class="ttdeci">static std::vector&lt; PatchInfo &gt; g_patches</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:40</div></div>
+<div class="ttc" id="astructPatches_1_1PatchInfo_html"><div class="ttname"><a href="structPatches_1_1PatchInfo.html">Patches::PatchInfo</a></div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:27</div></div>
+<div class="ttc" id="astructPatches_1_1PatchInfo_html_a6326f173c40b7b1cfac62aaca6d4429a"><div class="ttname"><a href="structPatches_1_1PatchInfo.html#a6326f173c40b7b1cfac62aaca6d4429a">Patches::PatchInfo::custom_patch_bytes</a></div><div class="ttdeci">string custom_patch_bytes</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:33</div></div>
+<div class="ttc" id="astructPatches_1_1PatchInfo_html_a85418921139e4ac9968888d05210a521"><div class="ttname"><a href="structPatches_1_1PatchInfo.html#a85418921139e4ac9968888d05210a521">Patches::PatchInfo::patch_type</a></div><div class="ttdeci">PATCH_TYPE patch_type</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:31</div></div>
+<div class="ttc" id="astructPatches_1_1PatchInfo_html_ad2499e775c7d459117977aeee81a5408"><div class="ttname"><a href="structPatches_1_1PatchInfo.html#ad2499e775c7d459117977aeee81a5408">Patches::PatchInfo::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:28</div></div>
+<div class="ttc" id="astructPatches_1_1PatchInfo_html_ae76f7a4597b8199a2828408326ce185f"><div class="ttname"><a href="structPatches_1_1PatchInfo.html#ae76f7a4597b8199a2828408326ce185f">Patches::PatchInfo::pattern</a></div><div class="ttdeci">string string pattern</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:30</div></div>
+<div class="ttc" id="astructPatches_1_1PatchInfo_html_af00d7a95d88c4a674833711908e2c5e1"><div class="ttname"><a href="structPatches_1_1PatchInfo.html#af00d7a95d88c4a674833711908e2c5e1">Patches::PatchInfo::offset</a></div><div class="ttdeci">int offset</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:32</div></div>
+<div class="ttc" id="astructPatches_1_1Patterns_html"><div class="ttname"><a href="structPatches_1_1Patterns.html">Patches::Patterns</a></div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:19</div></div>
+<div class="ttc" id="astructPatches_1_1Patterns_html_a4c627dc5571b0136431ed39dffe9ab0f"><div class="ttname"><a href="structPatches_1_1Patterns.html#a4c627dc5571b0136431ed39dffe9ab0f">Patches::Patterns::create_interface</a></div><div class="ttdeci">static const string create_interface</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:20</div></div>
+<div class="ttc" id="astructPatches_1_1Patterns_html_a6179b8f3ff6371cd1b7863871af7b568"><div class="ttname"><a href="structPatches_1_1Patterns.html#a6179b8f3ff6371cd1b7863871af7b568">Patches::Patterns::set_rendering_enabled_fix</a></div><div class="ttdeci">static const string set_rendering_enabled_fix</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:23</div></div>
+<div class="ttc" id="astructPatches_1_1Patterns_html_a6af03ea2208e1ff409844608aec54d4e"><div class="ttname"><a href="structPatches_1_1Patterns.html#a6af03ea2208e1ff409844608aec54d4e">Patches::Patterns::visible_by_enemy</a></div><div class="ttdeci">static const string visible_by_enemy</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:24</div></div>
+<div class="ttc" id="astructPatches_1_1Patterns_html_a996e9dbd7ed7adb7d4cf84ba615a917f"><div class="ttname"><a href="structPatches_1_1Patterns.html#a996e9dbd7ed7adb7d4cf84ba615a917f">Patches::Patterns::set_rendering_enabled</a></div><div class="ttdeci">static const string set_rendering_enabled</div><div class="ttdef"><b>Definition</b> Dota2Patcher.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="Dota2Patcher_8h.html">Dota2Patcher.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
