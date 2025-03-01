@@ -1,0 +1,25 @@
+var NAVTREEINDEX1 =
+{
+"structMemory_1_1ModuleInfo.html#aa1c75f2da8e2ec899b1c3076ee0c4063":[0,0,25,0,0],
+"structPatches_1_1PatchInfo.html":[0,0,26,0],
+"structPatches_1_1PatchInfo.html#a6326f173c40b7b1cfac62aaca6d4429a":[0,0,26,0,0],
+"structPatches_1_1PatchInfo.html#a85418921139e4ac9968888d05210a521":[0,0,26,0,3],
+"structPatches_1_1PatchInfo.html#ad2499e775c7d459117977aeee81a5408":[0,0,26,0,1],
+"structPatches_1_1PatchInfo.html#ae76f7a4597b8199a2828408326ce185f":[0,0,26,0,4],
+"structPatches_1_1PatchInfo.html#af00d7a95d88c4a674833711908e2c5e1":[0,0,26,0,2],
+"structPatches_1_1Patterns.html":[0,0,26,1],
+"structSemVer.html":[0,0,32],
+"structSemVer.html#a2f3ef173bdfd1a000236b4f12d69ebe3":[0,0,32,5],
+"structSemVer.html#a619f81baeb7cd81e3fd930f3c7e0e96f":[0,0,32,6],
+"structSemVer.html#a7f20d163cced448408237bb299298bd4":[0,0,32,0],
+"structSemVer.html#a9b537aaabf8613addff6e810a3b70d81":[0,0,32,7],
+"structSemVer.html#ac6c5ad657f03cd49b163efaf4eca9398":[0,0,32,1],
+"structSemVer.html#ae9c19d55065fc455509afb443135a41d":[0,0,32,4],
+"structSemVer.html#aec8a1319d861f785b72ea67ad62d17fa":[0,0,32,3],
+"structSemVer.html#af64e07c7eb36855c1e387bfc6aa2d2a0":[0,0,32,2],
+"structWebVer.html":[0,0,35],
+"structWebVer.html#a46d002168676823ea4af4aa9667bd1b8":[0,0,35,3],
+"structWebVer.html#a60e8be2ce0cb4b3b985b61a8eaa8cd7b":[0,0,35,0],
+"structWebVer.html#a6e551e06173c82bda94ea05e4105e11f":[0,0,35,2],
+"structWebVer.html#af41199c38f52f834441e85b1dcdb47f7":[0,0,35,1]
+};
